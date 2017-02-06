@@ -43,18 +43,22 @@ A simple es6 file converter
 
 * [Here for information about others OS and distro](https://www.microsoft.com/net/core)
 
+## Installing the app
+1. open a terminal/command prompt
+2. move to the app root directory
+3. run `dotnet restore` 
+
 ## Using the app
 1. open a terminal/command prompt
 2. move to the app root directory
-3. if is the first time run `dotnet restore` 
-4. run `dotnet run src [dest]`
+3. Run `dotnet run src [dest]`
 
 ### Rules
 * *src* is a file or directory to convert
 * if *src* is a directory all files inside will be converted. 
 * *dest* is a file or directory to put the converted files.
 * if *dest* is a directory, all files converted will be put inside with the same name.
-* if *dest* is a file, all files converted will be appended to this file, if the file exists will be overwritten.
+* if *dest* is a file, all files converted will be appended to this file, if the file exists it will be overwritten.
 
 ### Limitations
 * If the *dest* directory don't exists the app will try to create it but will fail if is not posible.
