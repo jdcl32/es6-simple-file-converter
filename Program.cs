@@ -79,8 +79,7 @@ namespace ConsoleApplication
                 Console.ForegroundColor = ConsoleColor.Red;
                 Write("ERR:Could not convert file or directory");
                 Console.ResetColor();
-                throw;
-                //return;
+                return;
             }
             
             var duration = DateTime.Now - startTime;
@@ -105,7 +104,6 @@ namespace ConsoleApplication
             }
             else
             {
-                WriteLine(dest);
                 File.WriteAllText(dest, content);
             }
             
